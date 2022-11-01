@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const ProfileContainer = styled.section`
 width: 100%;
-min-height: 13.25rem;
-margin-top: -9rem;
-background: ${({theme}) => theme.colors["base-profile"]};
+min-height: 33.25rem;
+margin-top: -16.5rem;
+opacity: 0.95;
+background: transparent;
 box-shadow: 0px 2px 28px rgba(0,0,0,0.2);
 border-radius: 10px;
 padding: 2rem 2.5rem;
@@ -24,17 +25,55 @@ display: flex;
 flex-direction: column;
 
 header{
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white; text-shadow: black 0.8em 0.2em 0.2em; 
+  font-size: 39px;
+  
   align-items: center;
   justify-content: space-between;
 }
-div{
+span{
+  color: gold;
+}
+p {
+  margin-top: 4rem;
+}
+
+ul {
   display: flex;
-  margin-top: 100px;
-  justify-content: center;
-  gap: 5rem;
-  
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: ${({ theme}) => theme.colors["base-label"]}
   }
-a:hover:before { animation: rumble-before .1s linear infinite; }
-a:hover:after  { animation: rumble-after .1s linear infinite;  }
+  }
+
+  
+`
+export const ProfileLinks = styled.a`
+  display: flex;
+  margin-top: 18rem;
+  justify-content: center;
+  gap: 5rem;  
+  font-size: 1.5rem;
+  transition: 0.4s;
+  border: none;
+  background: none; 
+  border-bottom: 0.2px solid transparent;
+
+a:hover{
+  transform: translate(-.4rem);
+  color: #FEFCBF;
+  transition: 0.9s;  
+}
 `

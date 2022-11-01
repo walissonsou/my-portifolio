@@ -1,12 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import HeaderBg from '../assets/Header2.png'
 export const GlobalStyles = createGlobalStyle`
-  @font-face {    
-    font-weight: 400;
-    font-style: normal;
-  }
+  
   * {
     margin: 0;
+    font-family: "Roboto";
     padding: 0;
     box-sizing: border-box;
     ::-webkit-scrollbar {

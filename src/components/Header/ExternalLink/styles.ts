@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ExternalLinkContainer = styled.a`
 border: none;
 background: none;
-color: ${({ theme }) => theme.colors["base-input"]};
+color: white;
 font-size: ${({theme}) => theme.textSizes['components-link']};
 text-transform: uppercase;
 display: flex;
