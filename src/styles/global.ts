@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import HeaderBg from '../assets/Header2.png'
 export const GlobalStyles = createGlobalStyle`
   @font-face {    
     font-weight: 400;
@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
-    background: ${({ theme }) => theme.colors["base-background"]};
+    background: url(${HeaderBg}) no-repeat center;
     color: ${({ theme }) => theme.colors["base-text"]};
     -webkit-font-smoothing: antialiased;
   }
