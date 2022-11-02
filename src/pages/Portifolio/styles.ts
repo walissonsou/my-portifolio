@@ -9,3 +9,10 @@ margin-bottom: 14rem;
 
 
 `
+
+export const Container = styled.div`
+@media (max-width: 630px) {
+  flex-direction: column;  
+  text-align: center;   
+}
+`

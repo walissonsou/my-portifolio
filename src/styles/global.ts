@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import HeaderBg from '../assets/Header2.png'
 export const GlobalStyles = createGlobalStyle`
   
-  * {
+  * {    
     margin: 0;
     font-family: "Roboto";
     padding: 0;
@@ -19,9 +19,11 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
+    
     background: url(${HeaderBg}) repeat center;
     color: ${({ theme }) => theme.colors["base-text"]};
     -webkit-font-smoothing: antialiased;
+    
   }
   body, input, textarea, button {
     font: 400 ${({ theme }) =>

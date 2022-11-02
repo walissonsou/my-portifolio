@@ -1,5 +1,5 @@
 import { ProfileContainer, ProfileDetails, ProfileLinks, ProfilePicture } from "./styles";
-import { FaHackerrank, FaDev, FaTwitterSquare, FaGithub, FaLinkedin, FaBuilding } from 'react-icons/fa'
+import { FaHackerrank, FaDev, FaTwitterSquare, FaGithub, FaLinkedin, FaBuilding , FaEnvelopeOpenText} from 'react-icons/fa'
 import { ExternalLink } from "../../../../components/Header/ExternalLink";
 export function Profile() {
   return (
@@ -12,12 +12,13 @@ export function Profile() {
             <ExternalLink text="Blog" />
           </header>
           <p>
-            Every single day, every word you say, every game you play, every night you stay, I'll be watching you.
+          O que me interessa é estar do lado de pessoas que se sentem vivas por dentro e não meçam esforços para consertar seu contexto ao redor independente de quais ferramentas inventarem para poder fazer isso.
+
           </p>
           <ul>
             <li>
-              <FaGithub />
-              Walissonsou
+              
+              <a href="mailto:walissonsouza96@hotmail.com"> <FaEnvelopeOpenText />  Contate-me </a>
             </li>
             <li>
               <FaBuilding />

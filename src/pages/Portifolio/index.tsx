@@ -3,7 +3,7 @@ import { api } from "../../libs/axios";
 import { Profile } from "./components/Profile";
 import { SearchInput } from "./components/Profile/SearchInput";
 import { Post } from "./Post";
-import { PortifolioListContainer } from "./styles";
+import { Container, PortifolioListContainer } from "./styles";
 
 const username = 'walissonsou';
 const repoName = 'meublog';
@@ -43,16 +43,16 @@ useEffect(() => {
   }, [])
 
   return (
-    <>
+    
+    <Container >
       <Profile />
       <SearchInput getPosts={getPosts} />
       <PortifolioListContainer>
         {posts.map((post) => (
           <Post key={post.number} post={post}/>
-        ))}
-        
-        
+        ))}             
       </PortifolioListContainer>
-    </>
+    </Container>
+    
   )
 }
