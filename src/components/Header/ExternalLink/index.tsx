@@ -1,6 +1,5 @@
 import { ComponentProps } from "react";
 import { ExternalLinkContainer } from "./styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 type ExternalLinkProps = ComponentProps<typeof ExternalLinkContainer> & {
