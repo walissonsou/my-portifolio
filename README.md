@@ -1,2 +1,2 @@
-# Repositório criado para estudar a ferramenta VITE
+# Site que irá para o ar em breve.
 ![Getting Started](./src/assets/Previa.jpg)
