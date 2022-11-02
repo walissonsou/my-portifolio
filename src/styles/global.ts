@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
-    background: url(${HeaderBg}) no-repeat center;
+    background: url(${HeaderBg}) repeat center;
     color: ${({ theme }) => theme.colors["base-text"]};
     -webkit-font-smoothing: antialiased;
   }

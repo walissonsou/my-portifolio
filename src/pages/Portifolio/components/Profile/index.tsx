@@ -1,5 +1,5 @@
 import { ProfileContainer, ProfileDetails, ProfileLinks, ProfilePicture } from "./styles";
-import { FaHackerrank, FaDev , FaTwitterSquare, FaGithub, FaLinkedin, FaBuilding} from 'react-icons/fa'
+import { FaHackerrank, FaDev, FaTwitterSquare, FaGithub, FaLinkedin, FaBuilding } from 'react-icons/fa'
 import { ExternalLink } from "../../../../components/Header/ExternalLink";
 export function Profile() {
   return (
@@ -12,19 +12,19 @@ export function Profile() {
             <ExternalLink text="Github" />
           </header>
           <p>
-          Every single day, every word you say, every game you play, every night you stay, I'll be watching you.
+            Every single day, every word you say, every game you play, every night you stay, I'll be watching you.
           </p>
           <ul>
             <li>
-            <FaGithub /> 
-            Walissonsou              
+              <FaGithub />
+              Walissonsou
             </li>
             <li>
               <FaBuilding />
               Assuncion
             </li>
           </ul>
-          <ProfileLinks>         
+          <ProfileLinks>
             <a href="#"> <FaHackerrank /> </a>
             <a href="#"> <FaDev /> </a>
             <a href="#"> <FaTwitterSquare /> </a>

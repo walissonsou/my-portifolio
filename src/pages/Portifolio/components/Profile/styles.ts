@@ -30,7 +30,7 @@ header{
   justify-content: space-between;
   color: white; text-shadow: black 0.8em 0.2em 0.2em; 
   font-size: 39px;
-  
+  letter-spacing: .1rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -38,6 +38,8 @@ span{
   color: gold;
 }
 p {
+  text-shadow: black 0.1em 0.2em 0.2em; 
+  letter-spacing: .1rem;
   margin-top: 4rem;
 }
 
@@ -46,6 +48,7 @@ ul {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  margin-top: 0.2rem;
 }
   li {
     display: flex;
