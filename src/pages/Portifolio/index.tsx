@@ -1,38 +1,58 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { api } from "../../libs/axios";
 import { Profile } from "./components/Profile";
 import { SearchInput } from "./components/Profile/SearchInput";
 import { Post } from "./Post";
 import { PortifolioListContainer } from "./styles";
 
-interface IPost{
+const username = 'walissonsou';
+const repoName = 'meublog';
+
+export interface IPost{
   title: string;
+  body: string;
+  created_at: string;
+  number: number;
+  html_url: string;
+  comments:number;
+  user: {
+    login:string;
+  };
 }
 
 export function Portifolio() {
-  const [ post, setPosts ] = useState<IPost[]>([]);
+  const [ posts, setPosts ] = useState<IPost[]>([]);
+  const [ isLoading, setIsLoading] = useState(true)
+  const getPosts = useCallback(
+    async (query: string = "") => {
+    try {
+      setIsLoading(true)
+      const response = await api.get(`/search/issues?q=${query}%20repo:${username}/${repoName}`
+      );
 
-  const getPosts = useCallback( async() => {
-    try{
-
+      console.log(response.data);
+      setPosts(response.data.items);
     } finally {
-
+      setIsLoading(false)
     }
-
-  }, [posts])
+  },
+  [posts]
+);
+  
+useEffect(() => {
+    getPosts()
+  }, [])
 
   return (
     <>
       <Profile />
       <SearchInput />
       <PortifolioListContainer>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        {posts.map((post) => (
+          <Post key={post.number} post={post}/>
+        ))}
+        
+        
       </PortifolioListContainer>
     </>
   )

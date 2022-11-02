@@ -9,7 +9,7 @@ export function Profile() {
         <ProfileDetails>
           <header>
             <h1> Hey, I'm Walisson ;<span>) </span> </h1>
-            <ExternalLink text="Github" />
+            <ExternalLink text="Blog" />
           </header>
           <p>
             Every single day, every word you say, every game you play, every night you stay, I'll be watching you.

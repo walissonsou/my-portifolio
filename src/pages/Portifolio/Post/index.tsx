@@ -1,16 +1,22 @@
+import { IPost } from "../..";
+import { relativeDataFormatter } from "../../../utils/formater";
 import { PostContainer } from "./styles";
 
-export function Post() {
-  return (
+interface PostProps {
+  post: IPost
+}
 
-    <PostContainer to="/post/1">
+export function Post({post}: PostProps) {
+  const formattedDate = relativeDataFormatter(post.created_at);
+
+  return (
+    <PostContainer to={`/post/${post.number}`}>
       <div>
-        <strong> Javascript data type and structures</strong>
-        <span> Há 1 dia</span>
+        <strong> {post.title} </strong>
+        <span> {formattedDate}</span>
       </div>
-      <p> Em outras palavras, o Context Api nos permite compartilhar dados entre nossos componentes de uma maneira mais aninhada e eficaz do que usando props.Em outras palavras, o Context Api nos permite compartilhar dados entre nossos componentes de uma maneira mais aninhada e eficaz do que usando props.Em outras palavras, o Context Api nos permite compartilhar dados entre nossos componentes de uma maneira mais aninhada e eficaz do que usando props.Em outras palavras, o Context Api nos permite compartilhar dados entre nossos componentes de uma maneira mais aninhada e eficaz do que usando props.
+      <p> {post.body}
       </p>
     </PostContainer>
-
   )
 }
