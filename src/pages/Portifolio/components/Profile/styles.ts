@@ -78,7 +78,7 @@ ul {
     svg {
     width: 1.1rem;
     height: 1.1rem;
-    color: ${({ theme}) => theme.colors["base-label"]}
+    color: ${({ theme}) => theme.colors["base-title"]}
   }
   }
 
@@ -94,7 +94,7 @@ export const ProfileLinks = styled.a`
   border: none;
   background: none; 
   border-bottom: 0.2px solid transparent;
-  color: gold;
+  
 
 a:hover{
   transform: translate(-.4rem);

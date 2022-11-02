@@ -18,10 +18,11 @@ export function Profile() {
           <ul>
             <li>
               
-              <a href="mailto:walissonsouza96@hotmail.com"> <FaEnvelopeOpenText />  Contate-me </a>
+              <a href="mailto:walissonsouza96@hotmail.com"> <FaEnvelopeOpenText /> &nbsp;&nbsp;&nbsp;&nbsp; Contate-me </a>
             </li>
             <li>
               <FaBuilding />
+              &nbsp;&nbsp;&nbsp;&nbsp;
                Recife, BR | Assuncão, PY 
             </li>
           </ul>
