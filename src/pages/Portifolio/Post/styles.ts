@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const PostContainer = styled.div`
+export const PostContainer = styled(Link)`
 width: 100%;
 height: 16.25rem;
 border-radius: 10px;
@@ -32,7 +33,7 @@ strong {
 }
 span {
   width: max-content;
-  ont-size: ${({theme}) => theme.textSizes["title-title-s"]};
+  font-size: ${({theme}) => theme.textSizes["title-title-s"]};
   color: white; 
 }
 p{
