@@ -1,4 +1,4 @@
-import { IPost } from "../..";
+import { IPost } from "../";
 import { relativeDataFormatter } from "../../../utils/formater";
 import { PostContainer } from "./styles";
 
