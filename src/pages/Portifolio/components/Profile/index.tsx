@@ -22,7 +22,7 @@ export function Profile() {
             </li>
             <li>
               <FaBuilding />
-              Assuncion
+               Recife, BR | Assuncão, PY 
             </li>
           </ul>
           <ProfileLinks>
