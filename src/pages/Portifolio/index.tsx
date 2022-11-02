@@ -30,7 +30,6 @@ export function Portifolio() {
       const response = await api.get(`/search/issues?q=${query}%20repo:${username}/${repoName}`
       );
 
-      console.log(response.data);
       setPosts(response.data.items);
     } finally {
       setIsLoading(false)
@@ -46,7 +45,7 @@ useEffect(() => {
   return (
     <>
       <Profile />
-      <SearchInput />
+      <SearchInput getPosts={getPosts} />
       <PortifolioListContainer>
         {posts.map((post) => (
           <Post key={post.number} post={post}/>
