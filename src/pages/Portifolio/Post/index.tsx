@@ -3,7 +3,7 @@ import { PostContainer } from "./styles";
 export function Post() {
   return (
 
-    <PostContainer>
+    <PostContainer to="/post/1">
       <div>
         <strong> Javascript data type and structures</strong>
         <span> Há 1 dia</span>

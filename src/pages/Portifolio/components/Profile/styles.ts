@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProfileContainer = styled.section`
 width: 100%;
-min-height: 33.25rem;
+min-height: 23.25rem;
 margin-top: -16.5rem;
 opacity: 0.95;
 background: transparent;
@@ -65,7 +65,7 @@ ul {
 `
 export const ProfileLinks = styled.a`
   display: flex;
-  margin-top: 18rem;
+  margin: 3rem auto;
   justify-content: center;
   gap: 5rem;  
   font-size: 1.5rem;
