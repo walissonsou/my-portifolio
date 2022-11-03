@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import { Header } from "../../components/Header";
 import { api } from "../../libs/axios";
 import { Profile } from "./components/Profile";
 import { SearchInput } from "./components/Profile/SearchInput";
@@ -46,7 +45,6 @@ useEffect(() => {
   return (
     
     <Container >
-      <Header />
       <Profile />
       <SearchInput getPosts={getPosts} />
       <PortifolioListContainer>
