@@ -5,8 +5,8 @@ import { Portifolio } from './pages/Portifolio';
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route element={<Portifolio />} />
+      <Route element={<DefaultLayout />}>
+        <Route path="/" element={<Portifolio />} />
       </Route>
     </Routes>
   );
