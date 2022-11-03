@@ -5,7 +5,7 @@ import { Header } from "../../components/Header";
 export function DefaultLayout() {
   return (
     <LayoutContainer>
-      <Header />
+      
       <main>
         <Outlet />
       </main>

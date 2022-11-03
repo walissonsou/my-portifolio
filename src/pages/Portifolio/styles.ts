@@ -11,6 +11,9 @@ margin-bottom: 14rem;
 `
 
 export const Container = styled.div`
+  width: 100%;
+  max-width: 59rem;
+  margin: 0 auto;
 @media (max-width: 630px) {
   flex-direction: column;  
   text-align: center;   
