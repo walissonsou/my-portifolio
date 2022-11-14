@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { DefaultLayout } from "../../layouts/DefaultLayout";
 import { api } from "../../libs/axios";
 import { Profile } from "./components/Profile";
 import { SearchInput } from "./components/Profile/SearchInput";
@@ -44,6 +45,8 @@ useEffect(() => {
 
   return (
     
+    <>
+    <DefaultLayout></DefaultLayout>
     <Container >
       <Profile />
       <SearchInput getPosts={getPosts} />
@@ -53,6 +56,6 @@ useEffect(() => {
         ))}             
       </PortifolioListContainer>
     </Container>
-    
+    </>
   )
 }
